@@ -1,0 +1,119 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; /* Updated font family */
+    margin: 0;
+    padding: 0;
+    color: #2D3748; /* Default text color */
+    font-size: 18px; /* Default font size */
+}
+
+.container {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer"; /* Define grid areas */
+    grid-template-columns: 2fr 1fr; /* Main content takes twice the space of the aside */
+    grid-template-rows: auto 1fr auto; /* Header and footer auto height, main and aside fill the space */
+    max-width: 1200px; /* Increase max width for better layout */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    grid-area: header; /* Assign to grid area */
+    background-color: #63B3ED; /* Header background color */
+    color: #FFFFFF; /* Header text color */
+    text-align: center;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Add padding */
+}
+
+header h1 {
+    font-size: 36px; /* Header h1 font size */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Header h1 font family */
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Added border to blog posts */
+    border-radius: 5px; /* Rounded corners for blog posts */
+    background-color: #f9f9f9; /* Background color for blog posts */
+}
+
+main {
+    grid-area: main; /* Assign to grid area */
+}
+
+aside {
+    grid-area: aside; /* Assign to grid area */
+}
+
+h2 {
+    font-size: 32px; /* Blog post titles font size */
+    color: #48BB78; /* Blog post titles color */
+}
+
+p {
+    margin: 5px 0; /* Add margin for paragraphs */
+}
+
+footer {
+    grid-area: footer; /* Assign to grid area */
+    background-color: #2C5282; /* Footer background color */
+    color: #FFFFFF; /* Footer text color */
+    text-align: center;
+    padding: 10px; /* Add padding */
+}
+
+.about {
+    padding: 20px; /* Add padding for About section */
+    border: 1px solid #ddd; /* Border for About section */
+    border-radius: 5px; /* Rounded corners for About section */
+    background-color: #E2E8F0; /* Match the specified background color */
+    margin-bottom: 20px; /* Add spacing below About section */
+    margin-top: 20px; /* Add spacing above About section to prevent it touching the header */
+}
+
+.about h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Heading font family */
+    color: #000000; /* About heading color */
+}
+
+.social-media,
+.archives {
+    /* No background or border for these sections */
+}
+
+.social-media h3, 
+.archives h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Heading font family */
+    color: #48BB78; /* Social Media and Archives headings color */
+}
+
+.social-media a, 
+.archives a {
+    color: #4299E1; /* Social Media and Archive links color */
+}
+
+/* Circular image effect for the header */
+.profile-image {
+    border-radius: 50%; /* Create a circular effect */
+    width: 100px; /* Set width */
+    height: 100px; /* Set height equal to width for a perfect circle */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+/* Square image effect for blog posts */
+.post-image {
+    width: 200px; /* Set width for blog images */
+    height: 200px; /* Set height equal to width for a perfect square */
+    object-fit: cover; /* Ensure the image fits well within the square */
+    margin: 20px; /* Add margin around the images for spacing */
+}
+
+    
+    
+
