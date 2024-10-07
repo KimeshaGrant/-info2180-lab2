@@ -82,9 +82,12 @@ footer {
     color: #000000; /* About heading color */
 }
 
-.social-media,
-.archives {
-    /* No background or border for these sections */
+
+.post .date,
+.post .author {
+    color: #718096; /* Date and Author text color */
+    font-size: 14px; /* Adjust font size if necessary */
+    margin: 0; /* Remove any default margin */
 }
 
 .social-media h3, 
