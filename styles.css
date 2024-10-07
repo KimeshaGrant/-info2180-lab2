@@ -95,6 +95,12 @@ footer {
     font-size: 14px; /* Adjust font size if necessary */
     margin: 0; /* Remove any default margin */
 }
+.post .date,
+.post .author {
+    color: #718096; /* Date and Author text color */
+    font-size: 14px; /* Adjust font size if necessary */
+    margin: 0; /* Remove any default margin */
+}
 
 .social-media h3, 
 .archives h3 {
